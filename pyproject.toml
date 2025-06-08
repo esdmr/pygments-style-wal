@@ -1,0 +1,20 @@
+[project]
+name = "pygments-style-wal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pygments>=2.19.1",
+]
+
+[dependency-groups]
+dev = [
+    "pygments-style-wal",
+]
+
+[tool.uv.sources]
+pygments-style-wal = { workspace = true }
+
+[project.entry-points."pygments.styles"]
+wal = "pygments_style_wal:WalStyle"
